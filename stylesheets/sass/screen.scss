@@ -32,25 +32,21 @@ $width-large: 1200px;
 
 // Content
 
+body {
+  margin: 0;
+}
+
 .main {
   width: 80%;
   margin: 10% 10%;
-}
-
-div {
-  .logo {
-    width: 60%;
-    margin: 0 20% 10%;
+  img {
+    width: 100%;
+    margin-bottom: 20px;
 
     @include responsive(medium-screens) {
       float: left;
       margin: 20px;
       width: 20%;
-    }
-
-    img {
-      display: block;
-      width: 100%;
     }
   }
 }
