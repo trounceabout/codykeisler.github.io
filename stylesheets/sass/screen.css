@@ -47,9 +47,11 @@ table {
   margin: 10% 10%; }
 
 div .logo {
-  float: left;
   margin: 20px;
   width: 20%; }
+  @media only screen and (max-width: 760px) {
+    div .logo {
+      float: left; } }
   div .logo img {
     display: block;
     width: 100%; }

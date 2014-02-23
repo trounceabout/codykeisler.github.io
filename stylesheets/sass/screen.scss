@@ -6,13 +6,31 @@
 $type: 'Noto Serif', Helvetica, sans-serif;
 $main-color: #010101;
 $accent-color: #555;
+$width-small: 400px;
+$width-medium: 760px;
+$width-large: 1200px;
 
 //mixins
 @mixin font($style, $size, $type) {
   font: $style $size $type;
   }
 
-//
+@mixin responsive($width) {
+  @if $width == wide-screens {
+    @media only screen and (max-width: $width-large) {
+      @content; }
+  }
+  @else if $width == medium-screens {
+    @media only screen and (max-width: $width-medium) {
+      @content; }
+  }
+  @else if $width == small-screens {
+    @media only screen and (max-width: $width-small) {
+      @content; }
+  }
+}
+
+// Content
 
 .main {
   width: 80%;
@@ -21,9 +39,12 @@ $accent-color: #555;
 
 div {
   .logo {
-  float: left;
-  margin: 20px;
-  width: 20%;
+    margin: 20px;
+    width: 20%;
+
+    @include responsive(medium-screens) {
+      float: left;
+    }
 
     img {
       display: block;
