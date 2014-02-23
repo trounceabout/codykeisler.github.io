@@ -63,10 +63,15 @@ table {
   src: url("/type/Source_Sans_Pro/SourceSansPro-Regular.eot");
   src: url("/type/Source_Sans_Pro/SourceSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("/type/Source_Sans_Pro/SourceSansPro-Regular.woff") format("woff"), url("/type/Source_Sans_Pro/SourceSansPro-Regular.ttf") format("truetype"), url("/type/Source_Sans_Pro/SourceSansPro-Regular.svg#SourceSansPro") format("svg"); }
 
-.logo {
-  background-image: url(img/logo.png);
+div.logo {
+  width: 100%;
+  background-image: url(/img/logo.png);
   background-size: 50%; }
 
 article h1 {
-  font-family: Helvetica;
+  font-family: "source sans pro";
   color: black; }
+
+article h2 {
+  font-family: "source sans pro", italic;
+  color: #010101; }

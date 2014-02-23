@@ -5,15 +5,22 @@
 @include font-face(SourceSansPro, '/type/Source_Sans_Pro/SourceSansPro-Regular');
 
 // Variables
-$type: Helvetica;
+$type: 'source sans pro';
 $main-color: #000;
+$accent-color: #010101;
 
-.logo {
-  background-image: url(img/logo.png);
+div.logo {
+  width: 100%;
+  background-image: url(/img/logo.png);
   background-size: 50%;
 }
 
 article h1 {
   font-family: $type;
   color: $main-color;
+}
+
+article h2 {
+  font-family: $type, italic;
+  color: $accent-color;
 }
