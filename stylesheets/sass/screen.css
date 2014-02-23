@@ -47,11 +47,13 @@ table {
   margin: 10% 10%; }
 
 div .logo {
-  margin: 20px;
-  width: 20%; }
+  width: 60%;
+  margin: 0 20% 10%; }
   @media screen and (min-width: 760px) {
     div .logo {
-      float: left; } }
+      float: left;
+      margin: 20px;
+      width: 20%; } }
   div .logo img {
     display: block;
     width: 100%; }
