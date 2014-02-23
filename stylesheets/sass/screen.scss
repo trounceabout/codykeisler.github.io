@@ -17,11 +17,11 @@ $width-large: 1200px;
 
 @mixin responsive($width) {
   @if $width == wide-screens {
-    @media screen and (max-width: $width-large) {
+    @media screen and (min-width: $width-large) {
       @content; }
   }
   @else if $width == medium-screens {
-    @media screen and (max-width: $width-medium) {
+    @media screen and (min-width: $width-medium) {
       @content; }
   }
   @else if $width == small-screens {
