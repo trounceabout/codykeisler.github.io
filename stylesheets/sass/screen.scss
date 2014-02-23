@@ -2,12 +2,8 @@
 @import "neat/neat";
 @import "reset";
 
-@include font-face(SourceSansPro, '/type/Source_Sans_Pro/SourceSansPro-Regular');
-@include font-face(SourceSansPro, '/fonts/Source_Sans_Pro/SourceSansPro-Bold', bold);
-@include font-face(SourceSansPro, '/fonts/Source_Sans_Pro/SourceSansPro-Italic', normal, italic);
-
 // Variables
-$type: 'source sans pro', Helvetica, sans-serif;
+$type: 'Noto Serif', Helvetica, sans-serif;
 $main-color: #010101;
 $accent-color: #555;
 
@@ -18,18 +14,37 @@ $accent-color: #555;
 
 //
 
-div.logo {
-  width: 100%;
-  background-image: url(/img/logo.png);
-  background-size: 50%;
+.main {
+  width: 80%;
+  margin: 10% 10%;
 }
 
-article h1 {
-  @include font(normal, 3em, $type);
-  color: $main-color;
+div {
+  .logo {
+  float: left;
+  margin: 20px;
+  width: 20%;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
 }
 
-article h2 {
-  @include font(italic, 1.5em, 'chapparal pro');
-  color: $accent-color;
+article {
+  h1 {
+    @include font(normal, 3em, 'Open Sans');
+    color: $main-color;
+  }
+
+  h2 {
+    @include font(italic, 1.5em, $type);
+    color: $accent-color;
+  }
+
+  p {
+    @include font(normal, 1em, $type);
+    color: $accent-color;
+  }
 }
