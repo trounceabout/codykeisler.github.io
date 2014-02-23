@@ -56,11 +56,17 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.main article h1 {
-  @font-face {
-    font-family: SourceSansPro;
-    font-weight: normal;
-    font-style: normal;
-    src: url("/type/Source_Sans_Pro/SourceSansPro-Regular.eot");
-    src: url("/type/Source_Sans_Pro/SourceSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("/type/Source_Sans_Pro/SourceSansPro-Regular.woff") format("woff"), url("/type/Source_Sans_Pro/SourceSansPro-Regular.ttf") format("truetype"), url("/type/Source_Sans_Pro/SourceSansPro-Regular.svg#SourceSansPro") format("svg"); }
- }
+@font-face {
+  font-family: SourceSansPro;
+  font-weight: normal;
+  font-style: normal;
+  src: url("/type/Source_Sans_Pro/SourceSansPro-Regular.eot");
+  src: url("/type/Source_Sans_Pro/SourceSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("/type/Source_Sans_Pro/SourceSansPro-Regular.woff") format("woff"), url("/type/Source_Sans_Pro/SourceSansPro-Regular.ttf") format("truetype"), url("/type/Source_Sans_Pro/SourceSansPro-Regular.svg#SourceSansPro") format("svg"); }
+
+.logo {
+  background-image: url(img/logo.png);
+  background-size: 50%; }
+
+article h1 {
+  font-family: Helvetica;
+  color: black; }
