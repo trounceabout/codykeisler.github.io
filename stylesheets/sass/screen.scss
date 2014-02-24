@@ -23,8 +23,8 @@ header {
   }
 
   h1 {
-    @include font(bold, 2.3em, 'Open Sans');
-    color: $main-color;
+    @include font(bold, 2.3em, $type);
+    color: #333;
     text-align: center;
     margin: 0 10% .25em;
   }
@@ -34,7 +34,6 @@ header {
     color: $accent-color;
     text-align: center;
     margin: 0 10% 1em;
-    text-transform: uppercase;
     letter-spacing: 10px;
   }
 }
@@ -46,5 +45,9 @@ header {
   p {
     @include font(normal, .9em, $type);
     color: $accent-color;
+    & a {
+      color: $main-color;
+      text-decoration: underline;
+    }
   }
 }
