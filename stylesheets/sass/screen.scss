@@ -41,7 +41,7 @@ header {
 
 .about {
   width: 80%;
-  margin: 0 10%;
+  margin: 0 10% 1.5em;
 
   p {
     @include font(normal, .9em, $type);
