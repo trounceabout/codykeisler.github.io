@@ -45,24 +45,28 @@ table {
 body {
   margin: 0; }
 
-.main {
-  width: 80%;
-  margin: 10% 10%; }
-  .main img {
-    width: 100%;
-    margin-bottom: 20px; }
-    @media screen and (min-width: 760px) {
-      .main img {
-        float: left;
-        margin: 20px;
-        width: 20%; } }
+header img {
+  width: 50%;
+  margin: 1.25em 25%;
+  display: block;
+  vertical-align: middle; }
+  @media screen and (min-width: 760px) {
+    header img {
+      float: left;
+      margin: 20px;
+      width: 20%; } }
+header h1 {
+  font: normal 2.3em 'Open Sans';
+  color: #010101;
+  text-align: center; }
+header h2 {
+  font: italic 1.1em 'Noto Serif', Helvetica, sans-serif;
+  color: #555;
+  text-align: center; }
 
-article h1 {
-  font: normal 3em 'Open Sans';
-  color: #010101; }
-article h2 {
-  font: italic 1.5em 'Noto Serif', Helvetica, sans-serif;
-  color: #555; }
-article p {
-  font: normal 1em 'Noto Serif', Helvetica, sans-serif;
-  color: #555; }
+.about {
+  width: 80%;
+  margin: 0 10%; }
+  .about p {
+    font: normal 0.9em 'Noto Serif', Helvetica, sans-serif;
+    color: #555; }

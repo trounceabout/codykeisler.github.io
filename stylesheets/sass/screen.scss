@@ -1,47 +1,19 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
 @import "reset";
-
-// Variables
-$type: 'Noto Serif', Helvetica, sans-serif;
-$main-color: #010101;
-$accent-color: #555;
-$width-small: 400px;
-$width-medium: 760px;
-$width-large: 1200px;
-
-//mixins
-@mixin font($style, $size, $type) {
-  font: $style $size $type;
-  }
-
-@mixin responsive($width) {
-  @if $width == wide-screens {
-    @media screen and (min-width: $width-large) {
-      @content; }
-  }
-  @else if $width == medium-screens {
-    @media screen and (min-width: $width-medium) {
-      @content; }
-  }
-  @else if $width == small-screens {
-    @media screen and (max-width: $width-small) {
-      @content; }
-  }
-}
-
-// Content
+@import "variables";
+@import "mixins";
 
 body {
   margin: 0;
 }
 
-.main {
-  width: 80%;
-  margin: 10% 10%;
+header {
   img {
-    width: 100%;
-    margin-bottom: 20px;
+    width: 50%;
+    margin: 1.25em 25%;
+    display: block;
+    vertical-align: middle;
 
     @include responsive(medium-screens) {
       float: left;
@@ -49,21 +21,26 @@ body {
       width: 20%;
     }
   }
-}
 
-article {
   h1 {
-    @include font(normal, 3em, 'Open Sans');
+    @include font(normal, 2.3em, 'Open Sans');
     color: $main-color;
+    text-align: center;
   }
 
   h2 {
-    @include font(italic, 1.5em, $type);
+    @include font(italic, 1.1em, $type);
     color: $accent-color;
+    text-align: center;
   }
+}
+
+.about {
+  width: 80%;
+  margin: 0 10%;
 
   p {
-    @include font(normal, 1em, $type);
+    @include font(normal, .9em, $type);
     color: $accent-color;
   }
 }
