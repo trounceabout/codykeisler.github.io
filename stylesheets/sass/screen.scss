@@ -23,17 +23,19 @@ header {
   }
 
   h1 {
-    @include font(normal, 2.3em, 'Open Sans');
+    @include font(bold, 2.3em, 'Open Sans');
     color: $main-color;
     text-align: center;
     margin: 0 10% .25em;
   }
 
   h2 {
-    @include font(italic, 1.2em, $type);
+    @include font(normal, 1.2em, $type);
     color: $accent-color;
     text-align: center;
-    margin: 0 10% .25em;
+    margin: 0 10% 1em;
+    text-transform: uppercase;
+    letter-spacing: 10px;
   }
 }
 
