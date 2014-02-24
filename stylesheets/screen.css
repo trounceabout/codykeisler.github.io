@@ -72,11 +72,13 @@ header img {
 header h1 {
   font: normal 2.3em "Open Sans";
   color: #010101;
-  text-align: center; }
+  text-align: center;
+  margin: 0 10% .25em; }
 header h2 {
-  font: italic 1.1em "Noto Serif", Helvetica, sans-serif;
+  font: italic 1.2em "Noto Serif", Helvetica, sans-serif;
   color: #555555;
-  text-align: center; }
+  text-align: center;
+  margin: 0 10% .25em; }
 
 .about {
   width: 80%;
