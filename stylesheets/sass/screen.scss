@@ -45,9 +45,11 @@ header {
   p {
     @include font(normal, .9em, $type);
     color: $accent-color;
+    margin-bottom: 1em;
+
     & a {
       color: $main-color;
-      text-decoration: underline;
+      text-decoration: none;
     }
   }
 }

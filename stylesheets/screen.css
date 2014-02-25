@@ -86,7 +86,8 @@ header h2 {
   margin: 0 10% 1.5em; }
   .about p {
     font: normal 0.9em "Open Sans", Helvetica, sans-serif;
-    color: #555555; }
+    color: #555555;
+    margin-bottom: 1em; }
     .about p a {
       color: #28b7ba;
-      text-decoration: underline; }
+      text-decoration: none; }
