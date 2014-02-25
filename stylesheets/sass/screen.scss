@@ -9,6 +9,13 @@ body {
 }
 
 header {
+  @include responsive(medium-screens) {
+      margin-top: 50px;
+    }
+  @include responsive(wide-screens) {
+      margin-top: 100px;
+    }
+
   img {
     width: 50%;
     margin: 1.25em 25%;
@@ -16,9 +23,14 @@ header {
     vertical-align: middle;
 
     @include responsive(medium-screens) {
+      margin: 0 37.5% 1.75em;
+      width: 25%;
+    }
+
+    @include responsive(wide-screens) {
       float: left;
-      margin: 20px;
-      width: 20%;
+      margin: 0 30px 0 10%;
+      width: 25%;
     }
   }
 
@@ -27,6 +39,10 @@ header {
     color: #333;
     text-align: center;
     margin: 0 10% .25em;
+
+    @include responsive(wide-screens) {
+      text-align: left;
+    }
   }
 
   h2 {
@@ -35,12 +51,17 @@ header {
     text-align: center;
     margin: 0 10% 1em;
     letter-spacing: 10px;
+
+    @include responsive(wide-screens) {
+      text-align: left;
+    }
   }
 }
 
 .about {
   width: 80%;
   margin: 0 10% 1.5em;
+
 
   p {
     @include font(normal, .9em, $type);
