@@ -98,12 +98,26 @@ header h2 {
       text-align: left; } }
 
 .about {
-  width: 80%;
-  margin: 0 10% 1.5em; }
+  width: 98%;
+  margin: 0 1% 1.5em; }
+  @media screen and (min-width: 600px) {
+    .about {
+      width: 92%;
+      margin: 0 4% 1.5em; } }
+  @media screen and (min-width: 600px) {
+    .about {
+      width: 80%;
+      margin: 0 10% 1.5em; } }
   .about p {
-    font: normal 0.9em "Open Sans", Helvetica, sans-serif;
+    font: normal 0.8em "Open Sans", Helvetica, sans-serif;
     color: #555555;
     margin-bottom: 1em; }
+    @media screen and (min-width: 600px) {
+      .about p {
+        font-size: 1.1em; } }
+    @media screen and (min-width: 1200px) {
+      .about p {
+        font-size: 1.1em; } }
     .about p a {
       color: #28b7ba;
       text-decoration: none; }
